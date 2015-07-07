@@ -1,0 +1,15 @@
+<div ng-controller="toysCtrl">
+		<div class="row">
+			<div class="col-sm-6 col-md-3"
+                 ng-repeat="item in products.product|orderBy:'name'">
+
+				<a href="#" class="thumbnail">
+					<img src="{{item.imageUrl}}"
+						 alt="Generic Placeholder Thumbnail">
+				</a>
+
+					<label class="label-info">{{item.name}} {{item.price}}</label>	
+			</div>
+		</div>
+</div>
+

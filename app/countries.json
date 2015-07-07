@@ -1,0 +1,21 @@
+[
+  {
+    "name": "Sharma",
+    "rating":4,
+    "number":123456789,
+    "place":"Hyderabad"
+  },
+  {
+    "name":"Shastry",
+    "rating":3,
+    "number":987654321,
+    "place":"vizayawada"
+  },
+  {
+    "name":"varadharajan",
+    "rating":5,
+    "number":112233445,
+    "place":"vizag"
+  }
+
+]

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>GetMePujari.com</title>
+    <link rel="stylesheet" href="content/css/bootstrap.min.css">
+    <link rel="stylesheet" href="content/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="app/style.css">
+    <script src="vendor/jquery-2.1.4.min.js"></script>
+    <script src="vendor/bootstrap.min.js"></script>
+    <script src="vendor/angular.min.js"></script>
+    <script src="vendor/angular-ui-router.js"></script>
+    <script src="app/app.js"></script>
+    <script src="vendor/ui-bootstrap-tpls-0.13.0.js"></script>
+
+</head>
+<body >
+<div ng-app="getMePujari">
+    <div class="container" ng-controller="mainController">
+        <nav role="navigation" class="navbar navbar-inverse">
+            
+            <div class="navbar-header">
+                <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <div class="navbar-brand" >GetMePujari.com</div>
+            </div>
+
+           
+            <div id="navbarCollapse" class="collapse navbar-collapse">
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li ng-repeat="menu in menuItems"
+                        ng-click="loadPage(menu)">
+                        <a href="#">{{menu.name}}</a>
+                    </li>
+
+                </ul>
+               <!-- <form role="search" class="navbar-form navbar-right">
+                    <div class="form-group">
+                        <input type="text" placeholder="Search" class="form-control" ng-model="teja">
+
+
+                    </div>
+                </form>-->
+
+            </div>
+        </nav>
+        <div ui-view>
+
+        </div>
+       <!-- <div ng-include="template"></div>-->
+</div>
+
+</div>
+
+<script src="app/directives/servicesDirective.js"></script>
+<script src="app/controllers/mainController.js"></script>
+<script src="app/controllers/aboutCtrl.js"></script>
+<script src="app/controllers/servicesCtrl.js"></script>
+<script src="app/controllers/loginCtrl.js"></script>
+<script src="app/controllers/toysCtrl.js"></script>
+
+</body>
+</html>

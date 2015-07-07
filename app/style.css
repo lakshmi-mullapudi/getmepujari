@@ -1,0 +1,32 @@
+
+/*
+.container{
+    margin: 20px 100px;
+}
+8*/
+body {
+    background-color: #faf2cc;
+
+}
+
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+    width: 100%;
+    margin:0;
+}
+/*#loginPage {
+    background: url("images/om.jpg") no-repeat center center;
+    background-size: 100% auto contain;
+}*/
+#loginPage {
+    background:url(images/om.jpg) no-repeat center top scroll;
+    background-size: 100% auto;
+    padding-bottom: 50%;
+}
+
+
+#loginPage > .form-horizontal {
+padding:35px;
+color: blue;
+    font-size: medium;
+}
